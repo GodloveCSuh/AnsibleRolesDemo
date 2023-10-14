@@ -1,0 +1,23 @@
+user {{ nginx_user }};
+worker_processes {{ nginx_worker_processes }};
+error_log {{ nginx_error_log }};
+pid {{ nginx_pid }};
+
+events {
+    worker_connections {{ nginx_worker_connections }};
+}
+
+http {
+    include /etc/nginx/mime.types;
+    default_type application/octet-stream;
+
+    server {
+        listen 80;
+        server_name {{ nginx_server_name }};
+
+        location / {
+            root {{ nginx_root_dir }};
+            index {{ nginx_index_file }};
+        }
+    }
+}

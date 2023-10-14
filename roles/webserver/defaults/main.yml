@@ -1,0 +1,12 @@
+---
+nginx_user: www-data
+nginx_worker_processes: auto
+
+nginx_error_log: /var/log/nginx/error.log
+nginx_pid: /var/run/nginx.pid
+
+nginx_worker_connections: 1024
+
+nginx_server_name: localhost
+nginx_root_dir: /var/www/html
+nginx_index_file: index.html
