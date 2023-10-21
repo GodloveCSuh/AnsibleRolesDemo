@@ -129,7 +129,7 @@ In the same directory, create `index.html.j2`:
     <title>Welcome to My Website</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <h1>Hello, World from Chongwain!</h1>
 </body>
 </html>
 ```
